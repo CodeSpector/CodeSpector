@@ -1,69 +1,57 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "CodeSpector | Helping Establish On Internet",
+	description: "CodeSpector is a startup based in Inda that aims to help buissnesses to establish their identity on the wilderness of the web",
 	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
+	{
+		label: "Home",
+		href: "/",
+	},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Services",
+      href: "/services",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Exprience",
+      href: "/experience",
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
+      label: "About Us",
       href: "/about",
+    },
+    {
+      label: "Contact Us",
+      href: "/contact",
     }
 	],
 	navMenuItems: [
-		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+	{
+		label: "Home",
+		href: "/",
+	},
+    {
+      label: "Services",
+      href: "/Services",
+    },
+    {
+      label: "Exprience",
+      href: "/experience",
+    },
+    {
+      label: "About Us",
+      href: "/about",
+    },
+    {
+      label: "Contact Us",
+      href: "/contact",
+    }
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
+		github: "https://github.com/CodeSpector",
 		twitter: "https://twitter.com/getnextui",
 		docs: "https://nextui.org",
 		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+		sponsor: "https://patreon.com/jrgarciadev"
 	},
 };
