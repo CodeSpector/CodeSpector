@@ -1,17 +1,13 @@
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
 import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 
 export default function Home() {
 	return (
 		<section className="flex flex-col items-left justify-left gap-4 py-8 md:py-10 bg-herobg before:blur-2xl before:bg-gradient-readial after:blur-2xl after:bg-gradient-conic">
 			<div className={"bg-gradient-to-r from-sky-500 to-indigo-500 h-full z-1"}>
-				
+
 			</div>
 			<div className="inline-block text-left justify-left z-2">
 				<h1 className={title()}>Code</h1>
@@ -20,8 +16,8 @@ export default function Home() {
 				<h1 className={subtitle({ class: "mt-3 font-bold" })}>
 					Helping Bussinesses Established On The Internet
 				</h1>
-				<p className={subtitle({  })}>
-					In today's digital world, it's more important than ever for businesses to have a strong online presence. We're a team of experienced web developers and designers who can help you create a website that is both visually appealing and easy to use. We'll also help you optimize your website for search engines so that potential customers can easily find you online.
+				<p className={subtitle({})}>
+					In today&spos;s digital world, it is more important than ever for businesses to have a strong online presence. We are a team of experienced web developers and designers who can help you create a website that is both visually appealing and easy to use. We will also help you optimize your website for search engines so that potential customers can easily find you online.
 				</p>
 			</div>
 
