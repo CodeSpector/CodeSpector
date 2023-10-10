@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'hero-slider': 'linear-gradient(#FF1CF7, #ff1cf700)',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
       },
