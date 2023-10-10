@@ -22,8 +22,6 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	TwitterIcon,
 	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
 	SearchIcon,
 } from "@/components/icons";
 
@@ -78,7 +76,7 @@ export const Navbar = () => {
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent
+			{/* <NavbarContent
 				className="hidden sm:flex basis-1/5 sm:basis-full"
 				justify="end"
 			>
@@ -86,20 +84,19 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
-					<ThemeSwitch />
-				</NavbarItem>
-			</NavbarContent>
+					{/* <ThemeSwitch /> */}
+				{/* </NavbarItem>
+			</NavbarContent> */} 
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
+				{/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
 					<GithubIcon className="text-default-500" />
-				</Link>
-				<ThemeSwitch />
+				</Link> */}
+				{/* <ThemeSwitch /> */}
 				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarMenu>
-				{searchInput}
 				<div className="mx-4 mt-2 flex flex-col gap-2">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
