@@ -4,10 +4,10 @@ export const siteConfig = {
 	name: "CodeSpector | Helping Establish On Internet",
 	description: "CodeSpector is a startup based in Inda that aims to help buissnesses to establish their identity on the wilderness of the web",
 	navItems: [
-	{
-		label: "Home",
-		href: "/",
-	},
+	  {
+		  label: "Home",
+		  href: "/",
+	  },
     {
       label: "Services",
       href: "/services",
@@ -26,13 +26,13 @@ export const siteConfig = {
     }
 	],
 	navMenuItems: [
-	{
-		label: "Home",
-		href: "/",
-	},
+	  {
+		  label: "Home",
+		  href: "/",
+	  },
     {
       label: "Services",
-      href: "/Services",
+      href: "/services",
     },
     {
       label: "Exprience",
