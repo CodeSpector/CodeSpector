@@ -7,7 +7,7 @@ import { title, subtitle } from "@/components/primitives";
 export default function Home() {
     return (
         <section className="flex flex-col items-left justify-left gap-4 py-8 md:py-10 ">
-            <div className="h-screen sm:translate-y-[16%] translate-y-0 flex flex-row items-start inset-0 ">
+            <div className="h-screen sm:translate-y-[16%] flex flex-row items-start inset-0 ">
                 <div className="backdrop-blur-2xl bg-[url('/hero.png')]  flex flex-row ">
                     <div className="flex flex-col justify-center items-center mt-5 translate-y-0 mr-1 ">
                         <div className="w-5 h-5 rounded-full bg-[#FF1CF7] inline-block "></div>
