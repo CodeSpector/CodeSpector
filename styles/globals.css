@@ -11,6 +11,10 @@
     }
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 *{
     transition: all 0.01s ease-in-out;
 }
@@ -32,4 +36,11 @@
     .gradient {
         --size: 500px;
     }
+}
+
+.services {
+    padding: 0.7rem;
+    margin: 0.4rem;
+    border: 1px solid #b249f8;
+    border-radius: 0.5rem;
 }

@@ -91,3 +91,15 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
         },
     };
 };
+
+export const defaultAni = (delay, duration) => {
+    return {
+        initial: {
+            opacity: 0,
+        },
+        whileInView: {
+            animate: { opacity: 1, scale: 1 },
+            transition: { duration: 0.5 },
+        },
+    };
+};
