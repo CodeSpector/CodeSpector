@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 
 import { title, subtitle } from "@/components/primitives";
 import { textVariant } from "@/utils/motion";
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
+import NextLink from "next/link";
 
 const ServicesHead = () => {
     return (
@@ -27,7 +30,7 @@ const ServicesHead = () => {
                     viewport={{ once: true }}
                     className="services"
                 >
-                    <h2 className={title({ size: "sm" })}>
+                    <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
                             className={title({ color: "violet", size: "sm" })}
                         >
@@ -58,14 +61,15 @@ const ServicesHead = () => {
                         Not ideal for frequently updated websites or interactive
                         features
                     </p>
+                    <Link href="/services/static" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="services"
+                    className="services-dynamic"
                 >
-                    <h2 className={title({ size: "sm" })}>
+                    <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
                             className={title({ color: "violet", size: "sm" })}
                         >
@@ -76,7 +80,7 @@ const ServicesHead = () => {
                     <p className={subtitle()}>
                         Dynamic websites are a better choice for businesses with
                         more complex websites that need to be updated regularly,
-                        such as news websites, e-commerce websites, and
+                        such as news websites, and
                         membership websites. They are also a good option for
                         businesses that want to offer users interactive
                         features, such as contact forms, comments, and shopping
@@ -100,6 +104,7 @@ const ServicesHead = () => {
                         Can be more complex to create and maintain, slower
                         loading times than static webpages
                     </p>{" "}
+                    <Link href="/services/dynamic" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -107,7 +112,7 @@ const ServicesHead = () => {
                     viewport={{ once: true }}
                     className="services"
                 >
-                    <h2 className={title({ size: "sm" })}>
+                    <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
                             className={title({ color: "violet", size: "sm" })}
                         >
@@ -139,6 +144,7 @@ const ServicesHead = () => {
                         Can be more expensive to create and maintain than other
                         types of websites
                     </p>{" "}
+                    <Link href="/services/ecommerce" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>
             </div>
         </section>
