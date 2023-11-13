@@ -53,13 +53,6 @@ const ServicesHead = () => {
                         </span>
                         Simple to create and maintain, fast loading times, good
                         for SEO <br />
-                        <span
-                            className={title({ size: "xs", color: "violet" })}
-                        >
-                            Cons:{" "}
-                        </span>{" "}
-                        Not ideal for frequently updated websites or interactive
-                        features
                     </p>
                     <Link href="/services/static" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>
@@ -96,13 +89,6 @@ const ServicesHead = () => {
                         Ideal for frequently updated websites and interactive
                         features, scalable
                         <br />
-                        <span
-                            className={title({ size: "xs", color: "violet" })}
-                        >
-                            Cons:{" "}
-                        </span>{" "}
-                        Can be more complex to create and maintain, slower
-                        loading times than static webpages
                     </p>{" "}
                     <Link href="/services/dynamic" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>
@@ -136,13 +122,6 @@ const ServicesHead = () => {
                         Ideal for selling products or services online, can be
                         highly customized
                         <br />
-                        <span
-                            className={title({ size: "xs", color: "violet" })}
-                        >
-                            Cons:{" "}
-                        </span>{" "}
-                        Can be more expensive to create and maintain than other
-                        types of websites
                     </p>{" "}
                     <Link href="/services/ecommerce" as={NextLink} color="primary" isBlock={true}>Get Started</Link>
                 </motion.div>

@@ -15,7 +15,7 @@
     scroll-behavior: smooth;
 }
 
-*{
+* {
     transition: all 0.01s ease-in-out;
 }
 .gradient {
@@ -27,7 +27,10 @@
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
     background-color: hsl(158, 82, 57, 85%);
-    background-image: -webkit-linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+    background-image: -webkit-linear-gradient(
+        hsl(158, 82, 57, 85%),
+        hsl(252, 82, 57)
+    );
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
@@ -36,6 +39,14 @@
     .gradient {
         --size: 500px;
     }
+}
+
+.cnt {
+    background: rgba(144, 144, 144, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .services {

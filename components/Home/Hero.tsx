@@ -12,7 +12,7 @@ const Hero = () => {
     return (
         <section className="flex flex-col items-left justify-left gap-4">
             <div className="h-[65vh] flex flex-row content-center items-start inset-0 flex-wrap">
-                <div className="backdrop-blur-2xl bg-[url('/hero.png')] max-w-full flex flex-row ">
+                <div className="backdrop-blur bg-[url('/hero.png')] z-1 max-w-full flex flex-row ">
                     <div className="flex flex-col justify-center items-center mt-5 translate-y-0 mr-1 ">
                         <div className="w-5 h-5 rounded-full bg-[#FF1CF7] inline-block "></div>
                         <div className="w-1 sm:h-60 h-72 bg-hero-slider inline-block"></div>
@@ -77,7 +77,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1 }}
                 className="max-w-7xl mb-6"
             >
-                <div className="flex flex-col text-right mb-32">
+                <div className="cnt p-5 flex flex-col text-right mb-32 ml-0 md:ml-[20%] lg:ml-[30%]">
                     <span>
                         <h1
                             className={title({
@@ -107,7 +107,7 @@ const Hero = () => {
                     </span>
                     <p
                         className={subtitle({
-                            class: "pl-0 sm:pl-4 md:pl-8 lg:pl-96",
+                            class: "pl-0",
                         })}
                     >
                         A well-designed website and active social media presence
@@ -124,7 +124,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1 }}
                 className="max-w-7xl mb-6"
             >
-                <div className="flex flex-col text-left mb-32">
+                <div className="cnt p-5 flex flex-col text-left mb-32 mr-0 md:mr-[20%] lg:mr-[30%]">
                     <span>
                         <h1
                             className={title({
@@ -154,7 +154,7 @@ const Hero = () => {
                     </span>
                     <p
                         className={subtitle({
-                            class: "pr-0 sm:pr-4 md:pr-8 lg:pr-96",
+                            class: "pr-0",
                         })}
                     >
                         We are a team of experienced web developers and
@@ -170,7 +170,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1 }}
                 className="max-w-7xl mb-6"
             >
-                <div className="flex flex-col text-right mb-32">
+                <div className="cnt p-5 flex flex-col text-right mb-32 ml-0 md:ml-[20%] lg:ml-[30%]">
                     <span>
                         <h1
                             className={title({
@@ -200,7 +200,7 @@ const Hero = () => {
                     </span>
                     <p
                         className={subtitle({
-                            class: "pl-0 sm:pl-4 md:pl-8 lg:pl-96",
+                            class: "pl-0",
                         })}
                     >
                         We are a team of experienced web developers and
@@ -214,9 +214,9 @@ const Hero = () => {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="mb-6 items-center content-center text-center flex"
+                className="mb-6 items-center content-center text-center flex ml-[10%] mr-[10%] md:ml-[20%] md:mr-[20%] lg:ml-[30%] lg:mr-[30%]"
             >
-                <div className="flex flex-col mb-32">
+                <div className="cnt p-5 flex flex-col mb-32">
                     <span className="mb-8">
                         <h1
                             className={title({
@@ -244,17 +244,14 @@ const Hero = () => {
                             WatingFor
                         </h1>
                     </span>
-                    {/* <p
+                    <p
                         className={subtitle({
-                            class: "pl-0 sm:pl-4 md:pl-8 lg:pl-96",
+                            class: "text-center",
                         })}
                     >
-                        We are a team of experienced web developers and
-                        designers who can help you create a website that is both
-                        visually appealing and easy to use. We will also help
-                        you optimize your website for search engines so that
-                        potential customers can easily find you online.
-                    </p> */}
+                        Make your Bussinesses online presence today with our services
+                        and watch more growth flowing in.
+                    </p>
 
                     <Link
                         as={NextLink}
@@ -264,7 +261,7 @@ const Hero = () => {
                             color: "primary",
                             radius: "full",
                             variant: "shadow",
-                            class: "max-w-sm items-center content-center text-center flex"
+                            class: "max-w-sm items-center content-center text-center flex mr-[20%] ml-[20%]"
                         })}
                     >
                         Get Started Now
