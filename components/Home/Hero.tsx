@@ -261,7 +261,7 @@ const Hero = () => {
                             color: "primary",
                             radius: "full",
                             variant: "shadow",
-                            class: "max-w-sm items-center content-center text-center flex mr-[10%] ml-[10%]"
+                            class: "max-w-sm items-center content-center text-center flex mr-[20%] ml-[20%]"
                         })}
                     >
                         Get Started Now
