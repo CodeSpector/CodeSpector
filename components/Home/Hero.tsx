@@ -14,12 +14,12 @@ const Hero = () => {
             <div className="h-[65vh] flex flex-row content-center items-start inset-0 flex-wrap">
                 <div className="backdrop-blur bg-[url('/hero.png')] z-1 max-w-full flex flex-row ">
                     <div className="flex flex-col justify-center items-center mt-5 translate-y-0 mr-1 ">
-                        <div className="w-5 h-5 rounded-full bg-[#FF1CF7] inline-block "></div>
+                        <div className="w-5 h-5 rounded-full bg-[#0072F5] inline-block "></div>
                         <div className="w-1 sm:h-60 h-72 bg-hero-slider inline-block"></div>
                     </div>
                     <div className="inline-block text-left justify-left z-2 relative">
                         <h1 className={title()}>Code</h1>
-                        <h1 className={title({ color: "violet" })}>Spector</h1>
+                        <h1 className={title({ color: "blue" })}>Spector</h1>
                         <br />
                         <br />
                         <h1 className={subtitle({ class: "mt-3 font-bold" })}>
@@ -90,7 +90,7 @@ const Hero = () => {
                         <h1
                             className={title({
                                 size: "sm",
-                                color: "violet",
+                                color: "blue",
                                 class: "font-bold",
                             })}
                         >
@@ -137,7 +137,7 @@ const Hero = () => {
                         <h1
                             className={title({
                                 size: "sm",
-                                color: "violet",
+                                color: "blue",
                                 class: "font-bold",
                             })}
                         >
@@ -183,7 +183,7 @@ const Hero = () => {
                         <h1
                             className={title({
                                 size: "sm",
-                                color: "violet",
+                                color: "blue",
                                 class: "font-bold",
                             })}
                         >
@@ -214,7 +214,7 @@ const Hero = () => {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="mb-6 items-center content-center text-center flex ml-[10%] mr-[10%] md:ml-[20%] md:mr-[20%] lg:ml-[30%] lg:mr-[30%]"
+                className="mb-6 items-center content-center text-center flex md:ml-[20%] md:mr-[20%] lg:ml-[30%] lg:mr-[30%]"
             >
                 <div className="cnt p-5 flex flex-col mb-32">
                     <span className="mb-8">
@@ -229,7 +229,7 @@ const Hero = () => {
                         <h1
                             className={title({
                                 size: "sm",
-                                color: "violet",
+                                color: "blue",
                                 class: "font-bold",
                             })}
                         >
