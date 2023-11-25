@@ -13,7 +13,7 @@ const ServicesHead = () => {
             <motion.div variants={textVariant()} className="mb-16">
                 <h1 className={title()}>
                     The
-                    <span className={title({ color: "violet" })}>Services</span>
+                    <span className={title({ color: "blue" })}>Services</span>
                     WeOffer
                 </h1>
                 <h2 className={subtitle()}>
@@ -32,7 +32,7 @@ const ServicesHead = () => {
                 >
                     <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
-                            className={title({ color: "violet", size: "sm" })}
+                            className={title({ color: "blue", size: "sm" })}
                         >
                             Static
                         </span>
@@ -47,7 +47,7 @@ const ServicesHead = () => {
                     <hr />
                     <p className={subtitle()}>
                         <span
-                            className={title({ size: "xs", color: "violet" })}
+                            className={title({ size: "xs", color: "blue" })}
                         >
                             Pros:{" "}
                         </span>
@@ -64,7 +64,7 @@ const ServicesHead = () => {
                 >
                     <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
-                            className={title({ color: "violet", size: "sm" })}
+                            className={title({ color: "blue", size: "sm" })}
                         >
                             Dynamic
                         </span>
@@ -82,7 +82,7 @@ const ServicesHead = () => {
                     <hr />
                     <p className={subtitle()}>
                         <span
-                            className={title({ size: "xs", color: "violet" })}
+                            className={title({ size: "xs", color: "blue" })}
                         >
                             Pros:{" "}
                         </span>
@@ -100,7 +100,7 @@ const ServicesHead = () => {
                 >
                     <h2 className={title({ size: "sm", class: "text-center" })}>
                         <span
-                            className={title({ color: "violet", size: "sm" })}
+                            className={title({ color: "blue", size: "sm" })}
                         >
                             E-Commerce
                         </span>
@@ -115,7 +115,7 @@ const ServicesHead = () => {
                     <hr />
                     <p className={subtitle()}>
                         <span
-                            className={title({ size: "xs", color: "violet" })}
+                            className={title({ size: "xs", color: "blue" })}
                         >
                             Pros:{" "}
                         </span>
