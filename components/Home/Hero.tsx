@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import HoverCircle from "../HoverCircle";
 
 const Hero = () => {
   return (
@@ -8,10 +9,11 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col justify-center items-center" 
+      className="flex flex-col justify-center items-center"
     >
       <div className="bg-hero w-[99vw]">
         <div className="h-screen  md:ml-[20%] md:mr-[20%] p-2 translate-y-[-3rem] flex flex-col justify-center text-left">
+          <HoverCircle />
           <h1 className="text-6xl md:text-7xl">CodeSpector</h1>
           <p className="text-2xl">
             Helping Bussinesses Established On The Internet
