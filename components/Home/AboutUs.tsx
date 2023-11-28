@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const AboutUS = () => {
   return (
-    <div className="">
-      <div className="cnt-container h-screen w-screen bg-[#030b0f]">
+    <div className="-translate-y-10">
+      <div className="cnt-container h-screen w-screen bg-[#030b0f] pl-[5%]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
