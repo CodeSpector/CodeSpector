@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const AboutUS = () => {
   return (
@@ -56,6 +57,18 @@ const AboutUS = () => {
               to use. We will also help you optimize your website for search
               engines so that potential customers can easily find you online.
             </p>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="max-w-7xl mb-7 flex justify-center items-center"
+        >
+          <div className="cnt p-5 flex flex-col text-center mb-32 ml-5 md:ml-[40%] md:mr-[10%] lg:ml-[50%] lg:mr-[20%]">
+            <span>
+              <h1 className="text-3xl text-center font-bold">Get Started</h1>
+            </span>
+            <Link href="/services" className="rounded-xl bg-[#06161f] p-4 px-10 m-5">Get Started</Link>
           </div>
         </motion.div>
       </div>
