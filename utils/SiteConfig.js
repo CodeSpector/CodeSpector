@@ -4,6 +4,10 @@ const NavLink = [
     path: '/'
   },
   {
+    name: "Services",
+    path: "/services"
+  },
+  {
     name: 'About',
     path: '/about'
   },

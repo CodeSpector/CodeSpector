@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const AboutUS = () => {
   return (
     <div className="-translate-y-10">
-      <div className="cnt-container h-screen w-screen bg-[#030b0f] pl-[5%]">
+      <div className="cnt-container pb-2 w-screen bg-[#030b0f] xl:pl-[5%] md:pr-[25%]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
