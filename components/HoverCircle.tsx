@@ -1,4 +1,4 @@
-// TODO: fix the position of the circle
+// TODO: magnification
 "use client";
 
 import { useEffect, useState } from "react";
@@ -21,7 +21,7 @@ const HoverCircle = () => {
     <motion.div
       style={{ x: position.x, y: position.y }}
       animate={{ x: position.x, y: position.y }}
-      className="h-1 w-1 p-5 border-1 rounded-full"
+      className="h-1 w-1 p-5 border-1 rounded-full touch-pinch-zoom"
     ></motion.div>
   );
 };
