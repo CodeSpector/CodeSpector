@@ -1,3 +1,4 @@
+// TODO: fix the position of the circle
 "use client";
 
 import { useEffect, useState } from "react";
@@ -8,13 +9,13 @@ const HoverCircle = () => {
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX - 100, y: e.clientY - 100 });
+      setPosition({ x: e.clientX - 25, y: e.clientY - 100 });
     };
     window.addEventListener("mousemove", mouseMove);
     return () => {
       window.removeEventListener("mousemove", mouseMove);
     };
-  }, []);
+  }, [position]);
 
   return (
     <motion.div
