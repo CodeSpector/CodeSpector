@@ -15,19 +15,20 @@ const ContactHead = () => {
           <h1 className="text-6xl font-bold">Contact Page</h1>
         </motion.div>
       </div>
-      <div className="cnt p-5 flex flex-col m-5 md:mr-[30%] md:ml-[30%]">
-        <form
-          action="https://formsubmit.co/codespector.buildedge@gmail.com"
-          method="POST"
-          className="flex flex-col justify-center items-center gap-2 py-5 max-w-xs mx-auto"
-        >
+      <div className="cnt p-5 flex flex-col md:flex-row m-5 justify-center content-center md:mr-[30%] md:ml-[30%]">
+        <form action="https://formsubmit.co/codespector.buildedge@gmail.com" method="POST" className="flex flex-col">
           {" "}
-          <label htmlFor="name" className="text-left justify-start">Name</label>
-          <input type="text" name="name" aria-label="Name" required={true} />{" "}
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" required={true} />{" "}
+          <label htmlFor="name">Name & Message</label>{" "}
+          <input type="text" name="name" required={true} className="my-5 mt-0 rounded-md" />{" "}
+          <label htmlFor="email">email</label>{" "}
+          <input type="email" name="email" required={true} className="my-5 mt-0 rounded-md" />{" "}
           <button type="submit">Send</button>{" "}
         </form>
+        <div className="mx-5">
+          <h1>Or</h1>
+          <p>Phone: +91-9826011274</p>
+        </div>
+
       </div>
     </div>
   );
