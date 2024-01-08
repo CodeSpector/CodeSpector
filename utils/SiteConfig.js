@@ -8,15 +8,11 @@ const NavLink = [
     path: "/services"
   },
   {
-    name: 'About',
-    path: '/about'
-  },
-  {
     name: 'Contact',
     path: '/contact'
   }
 ]
 
-export { 
+export {
   NavLink,
 }

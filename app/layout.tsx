@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import HoverCircle from "@/components/HoverCircle";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <div className="">
           <Providers>
             <Nav />
+            <HoverCircle />
             {children}
             <footer>
               <Footer />

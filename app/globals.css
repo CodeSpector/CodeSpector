@@ -2,59 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 000, 000, 000;
-  --background-end-rgb: 000, 000, 000;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* :root { */
+/*   --foreground-rgb: 255, 255, 255; */
+/*   --background-start-rgb: 000, 000, 000; */
+/*   --background-end-rgb: 000, 000, 000; */
+/* } */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient( */
+  /*     to bottom, */
+  /*     transparent, */
+  /*     rgb(var(--background-end-rgb)) */
+  /*   ) */
+  /*   rgb(var(--background-start-rgb)); */
 
   text-overflow: ellipsis;
   overflow-x: hidden;
 
   scroll-behavior: smooth;
-}
-
-form {
-  border-radius: 50%;
-  color: white;
-}
-input {
-  border-radius: 0.5rem;
-  color: white;
-}
-input:focus {
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.cnt-container {
-  backdrop-filter: blur(90px);
-  -webkit-backdrop-filter: blur(90px);
-
-  padding-top: 5rem;
-}
-
-.cnt {
-  background: rgba(44, 44, 44, 0.1);
-  backdrop-filter: blur(92px);
-  -webkit-backdrop-filter: blur(92px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
