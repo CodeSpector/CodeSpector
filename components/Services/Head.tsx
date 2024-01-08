@@ -1,4 +1,5 @@
 "use client";
+import '../../app/globals.css'
 
 import { motion } from "framer-motion";
 
@@ -22,45 +23,38 @@ const ServicesHead = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-3xl font-bold mt-5">Static Sites</h1>
+          <h1 className="text-3xl font-bold mt-5">Genral Sites</h1>
           <p className="text-xl mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatem, quidem, voluptatum, quas voluptate voluptas quod
-            voluptates quibusdam quia quae illo? Quisquam voluptatem, quidem,
-            voluptatum, quas voluptate voluptas quod voluptates quibusdam quia
-            quae illo?
+            General website are of two types: static and dynamic.
+            Static websites deliver straightforward content without user interaction, ideal for simple information display. Dynamic websites, on the other hand, adapt and respond to user input, offering interactive features and personalized content. Choose the right approach for your online presence – simplicity or engagement, static or dynamic, we've got you covered.
           </p>
         </motion.div>
         <motion.div
-          className="cnt flex flex-col justify-center items-center p-5"
+          className="cnt flex flex-col justify-center items-center p-5 m-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl font-bold mt-5">E-commerce Sites</h1>
           <p className="text-xl mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatem, quidem, voluptatum, quas voluptate voluptas quod
-            voluptates quibusdam quia quae illo? Quisquam voluptatem, quidem,
-            voluptatum, quas voluptate voluptas quod voluptates quibusdam quia
-            quae illo?
+            Ecommerce stores empower businesses to sell products or services online, providing a seamless shopping experience. Static ecommerce sites offer straightforward product displays, while dynamic ones enhance user engagement with features like personalized recommendations and interactive shopping carts. Elevate your online retail game with our tailored ecommerce solutions – your gateway to digital success.
           </p>
         </motion.div>
-        <motion.div
-          className="cnt flex flex-col justify-center items-center p-5"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h1 className="text-3xl font-bold mt-5">Dynamic Sites</h1>
-          <p className="text-xl mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatem, quidem, voluptatum, quas voluptate voluptas quod
-            voluptates quibusdam quia quae illo? Quisquam voluptatem, quidem,
-            voluptatum, quas voluptate voluptas quod voluptates quibusdam quia
-            quae illo?
-          </p>
-        </motion.div>
+        {/* <motion.div */}
+        {/*   className="cnt flex flex-col justify-center items-center p-5" */}
+        {/*   initial={{ opacity: 0 }} */}
+        {/*   animate={{ opacity: 1 }} */}
+        {/*   transition={{ duration: 1 }} */}
+        {/* > */}
+        {/*   <h1 className="text-3xl font-bold mt-5">Dynamic Sites</h1> */}
+        {/*   <p className="text-xl mt-5"> */}
+        {/*     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam */}
+        {/*     voluptatem, quidem, voluptatum, quas voluptate voluptas quod */}
+        {/*     voluptates quibusdam quia quae illo? Quisquam voluptatem, quidem, */}
+        {/*     voluptatum, quas voluptate voluptas quod voluptates quibusdam quia */}
+        {/*     quae illo? */}
+        {/*   </p> */}
+        {/* </motion.div> */}
       </div>
     </div>
   );
