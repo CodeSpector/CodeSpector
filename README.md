@@ -25,16 +25,16 @@ features and API.
 `````text
 root
 |- app/
-  |- about/
-  |- contact/
-  |- services/
-  |- *cnt
+| |- about/
+| |- contact/
+| |- services/
+| |- *cnt
 |- components/
-  |- components*
+| |- components*
 |- public/
 |- utils
-  |- SiteConfig.js
+| |- SiteConfig.js
 |- *configs
 `````
 
-im lazy to write this
+I'm lazy to write this
