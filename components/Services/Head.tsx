@@ -26,7 +26,7 @@ const ServicesHead = () => {
           <h1 className="text-3xl font-bold mt-5">Genral Sites</h1>
           <p className="text-xl mt-5">
             General website are of two types: static and dynamic.
-            Static websites deliver straightforward content without user interaction, ideal for simple information display. Dynamic websites, on the other hand, adapt and respond to user input, offering interactive features and personalized content. Choose the right approach for your online presence – simplicity or engagement, static or dynamic, we've got you covered.
+            Static websites deliver straightforward content without user interaction, ideal for simple information display. Dynamic websites, on the other hand, adapt and respond to user input, offering interactive features and personalized content. Choose the right approach for your online presence – simplicity or engagement, static or dynamic, we{'&apos;'}ve got you covered.
           </p>
         </motion.div>
         <motion.div
