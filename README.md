@@ -1,40 +1,40 @@
-# Getting Started
+# Next.js & NextUI Template
 
-First, run the development server:
+This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+
+## Technologies Used
+
+- [Next.js 13](https://nextjs.org/docs/getting-started)
+- [NextUI v2](https://nextui.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Variants](https://tailwind-variants.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
+
+## How to Use
+
+
+### Use the template with create-next-app
+
+To create a new project based on this template using `create-next-app`, run the following command:
 
 ```bash
-# or
-yarn dev
-# or
-bun dev
+npx create-next-app -e https://github.com/nextui-org/next-app-template
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+### Install dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
-to automatically optimize and load font.
+```bash
+npm install
+```
 
-## Framework Documentation
+### Run the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev
+```
 
-## File Structure
+## License
 
-`````text
-root
-|- app/
-| |- about/
-| |- contact/
-| |- services/
-| |- *cnt
-|- components/
-| |- components*
-|- public/
-|- utils
-| |- SiteConfig.js
-|- *configs
-`````
-
-I'm lazy to write this
+Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
