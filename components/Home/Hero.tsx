@@ -11,12 +11,11 @@ const Hero = () => {
       className="flex flex-col justify-center items-center -translate-y-10"
     >
       <div className="bg-hero w-[99vw]">
-        <div className="h-screen  md:ml-[20%] md:mr-[20%] p-2 translate-y-[-3rem] flex flex-col justify-center text-left">
+        <div className="h-screen  md:ml-[20%] md:mr-[20%] p-2 translate-y-[-3rem] flex flex-col justify-center text-center">
           <h1 className="text-6xl md:text-7xl">CodeSpector</h1>
           <p className="text-2xl">
-            Helping Bussinesses Established On The Internet
+            Helping Businesses and Individuals Globally Build a Strong Online Presence
           </p>
-          {/* <span>In this digital world, it is more important than ever for businesses to have a strong online presence. We are a team of experienced web developers and designers who can help you create a website that is both visually appealing and easy to use. We will also help you optimize your website for search engines so that potential customers can easily find you online</span> */}
           <span className="text-md text-slate-500 md:translate-y-[150%]">
             Scroll To Learn More
           </span>
