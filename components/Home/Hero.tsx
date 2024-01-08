@@ -8,7 +8,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col justify-center content-center items-center -translate-y-10"
+      className="flex flex-col justify-center content-center items-center align-middle -translate-y-10"
     >
       <div className="bg-hero w-[99vw]">
         <div className="h-[85vh]   p-2 translate-y-[-3rem] flex flex-col justify-center text-center md:ml-[20%] mr-[20%]">
