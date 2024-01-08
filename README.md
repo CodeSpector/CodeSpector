@@ -1,4 +1,4 @@
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -21,6 +21,7 @@ features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 ## File Structure
+
 `````text
 root
 |- app/
@@ -35,4 +36,5 @@ root
   |- SiteConfig.js
 |- *configs
 `````
-- im lazy to write this
+
+im lazy to write this
