@@ -15,8 +15,8 @@ const Hero = () => {
       <div className="bg-hero-wave-v md:bg-hero-wave-h bg-no-repeat bg-cover h-screen w-[99vw]">
         <div className="h-full w-full p-2 translate-y-[-3rem] flex flex-col justify-center align-center items-center text-center">
           <div className="backdrop-blur-2xl p-10 rounded-lg bg-[#fff1]">
-            <h1 className="text-6xl md:text-7xl">CodeSpector</h1>
-            <p className="text-2xl">
+            <h1 className="text-4xl md:text-7xl">CodeSpector</h1>
+            <p className="text-xl md:text-2xl">
               Helping Bussinesses & Individuals Established On The Internet
             </p>
             <Button
