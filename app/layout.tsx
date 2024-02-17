@@ -25,8 +25,8 @@ export default function RootLayout({
       <body className={roboto.className}>
         <div className="">
           <Providers>
-            <HoverCircle />
             <Nav />
+            <HoverCircle />
             {children}
             <footer>
               <Footer />
