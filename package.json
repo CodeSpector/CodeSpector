@@ -11,6 +11,9 @@
   "dependencies": {
     "@nextui-org/navbar": "^2.0.27",
     "@nextui-org/react": "^2.2.9",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "clsx": "^2.1.0",
     "framer-motion": "^10.16.5",
     "next": "14.0.3",
