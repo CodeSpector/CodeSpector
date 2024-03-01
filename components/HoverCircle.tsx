@@ -9,7 +9,7 @@ const HoverCircle = () => {
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX - 25, y: e.clientY - 100 });
+      setPosition({ x: e.clientX - 20, y: e.clientY - 75 });
     };
     window.addEventListener("mousemove", mouseMove);
     return () => {

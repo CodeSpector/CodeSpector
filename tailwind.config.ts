@@ -16,6 +16,25 @@ const config: Config = {
         "hero-wave-h": "url('/layered-waves-haikei-h.svg')",
         "hero-wave-v": "url('/layered-waves-haikei-v.svg')",
       },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+        "sc-animation": "sc 1s ease-in-out infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+        sc: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
     },
   },
   darkMode: "class",
@@ -29,7 +48,7 @@ const config: Config = {
           colors: {
             background: "#001220",
             primary: {
-              DEFAULT: "#0074b3",
+              DEFAULT: "#7871d6",
               foreground: "#009eea",
             },
             focus: "#0074b3",
