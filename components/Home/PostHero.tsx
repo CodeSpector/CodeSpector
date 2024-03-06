@@ -1,5 +1,5 @@
-import { LampContainer } from "../ui/lamp";
-import { SparklesCore } from "../ui/sparkles";
+import { LampContainer } from "@components/ui/lamp";
+import { BentoHome } from "@components/Home/HomeBento";
 
 const PostHero = () => {
   return (
@@ -29,6 +29,9 @@ const PostHero = () => {
           </div>
         </div>
         </LampContainer>
+      </div>
+      <div className="md:mb-10">
+        <BentoHome />
       </div>
     </>
   );

@@ -35,9 +35,11 @@ const Hero = () => {
               Get Started
             </Button>
           </div>
-          <span className="animate-sc-animation flex justify-end align-bottom">{"∨"}</span>
+          <span className="animate-sc-animation flex justify-end align-bottom">{"V"}</span>
         </div>
       </div>
+      {/* TODO: Fix the bleed not bleeding */}
+      <div className="w-screen h-2 shadow-lg shadow-light-purple"></div>
     </motion.div>
   );
 };
