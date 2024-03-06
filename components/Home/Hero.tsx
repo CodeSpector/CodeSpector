@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
       {/* TODO: Fix the bleed not bleeding */}
-      <div className="w-screen h-2 shadow-lg shadow-light-purple"></div>
+      {/* <div className="w-screen h-2 shadow-lg shadow-light-purple"></div> */}
     </motion.div>
   );
 };

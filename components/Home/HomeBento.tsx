@@ -34,12 +34,12 @@ const items = [
   // TODO: Add the actual content
   {
     title: "Cutting-Edge Technology",
-    description: "Stay ahead of time with latest technology.",
+    description: "Stay ahead of time and competition with latest technology.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
+    title: "The Internet Revolution",
     description: "Control the power of internet to boost your progress.",
     header: <Skeleton />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
@@ -51,9 +51,9 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
+    title: "Powerful Communication",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "Communicate with your customers like never before with stuning designs.",
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
