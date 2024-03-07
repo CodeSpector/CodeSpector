@@ -14,6 +14,7 @@ const config: Config = {
         "light-purple": "#5f4a9c",
         "main-bg": "#001220",
         "bento-bg": "#00101c",
+        "bento-purple": "#5f4a1c",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

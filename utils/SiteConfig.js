@@ -4,11 +4,11 @@ const NavLink = [
     path: '/'
   },
   {
-    name: "Services",
-    path: "/services"
+    name: "Get Started",
+    path: "/getstarted"
   },
   {
-    name: 'Contact',
+    name: 'Know More',
     path: '/contact'
   }
 ]
