@@ -38,8 +38,8 @@ const GetStarted = () => {
     },
   ];
   const contactMethod = [
-    {key: 1, lable: "Phone/Whatsapp"},
-    {key: 2, lable: "Email"},
+    { key: 1, lable: "Phone/Whatsapp" },
+    { key: 2, lable: "Email" },
   ]
 
   return (
@@ -49,105 +49,103 @@ const GetStarted = () => {
         <TypewriterEffectSmooth words={words} />
       </div>
 
-      <motion.div initial={false}>
-          <div className="flex flex-col md:flex-row">
-            <div>
-              <h1 className="text-xl">Basic Info</h1>
-              <Input
-                aria-label="lable1"
-                name="name"
-                type="name"
-                color="primary"
-                required={true}
-                placeholder="Enter your name"
-                radius="sm"
-                className="w-80 py-5 bg-transparent text-white"
-                onChange={(e) => setData({ ...data, name: e.target.value })}
-                
-              />
-              <Input
-                aria-label="lable1"
-                name="email"
-                type="email"
-                color="primary"
-                required={true}
-                placeholder="Enter your email"
-                radius="sm"
-                className="w-80 py-5 text-white"
-                onChange={(e) => setData({ ...data, mail: e.target.value })}
-              />
-              <Input
-                aria-label="lable1"
-                name="phone"
-                type="text"
-                color="primary"
-                required={true}
-                placeholder="Enter your phone number"
-                radius="sm"
-                className="w-80 py-5 text-white"
-                onChange={(e) => setData({ ...data, phone: e.target.value })}
-              />
-              <Select
-                aria-label="lable1"
-                color="primary"
-                items={contactMethod}
-                name="contactmethod"
-                placeholder="Method of contact"
-                radius="sm"
-                className="w-80 py-5 text-white"
-                onChange={(e) => setData({ ...data, contactm: e.target.value })}
-              >
-                {(contactMethod) => <SelectItem key={contactMethod.key}>{contactMethod.lable}</SelectItem>}
-              </Select>
-            </div>
-            <div className="md:pl-5">
-              <h1 className="text-xl">Site Setup</h1>
-              <Select
-                aria-label="lable1"
-                items={ServicesOffered}
-                name="sitetype"
-                color="primary"
-                placeholder="Select a type of website"
-                radius="sm"
-                className="w-80 py-5 text-white"
-                onChange={(e) => setData({ ...data, web: e.target.value })}
-              >
-                {(ServicesOffered) => <SelectItem key={ServicesOffered.key}>{ServicesOffered.lable}</SelectItem>}
-              </Select>
-              <Input
-                aria-label="lable1"
-                name="use"
-                type="text"
-                color="primary"
-                placeholder="Use of website"
-                className="py-5 text-white"
-                radius="sm"
-                onChange={(e) => setData({ ...data, use: e.target.value })}
-              />
-              <Input
-                aria-label="lable1"
-                name="color"
-                type="text"
-                color="primary"
-                placeholder="Base Color scheme"
-                className="py-5 text-white"
-                radius="sm"
-                onChange={(e) => setData({ ...data, color: e.target.value })}
-              />
-              <Textarea
-                aria-label="lable1"
-                color="primary"
-                placeholder="Additional information"
-                radius="sm"
-                className="py-5 text-white"
-                onChange={(e) => setData({ ...data, addinfo: e.target.value })}
-              />
-            </div>
-          </div>
-          <button onClick={handleSubmit} className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
-            Get Started
-          </button>
-      </motion.div>
+      <div className="flex flex-col md:flex-row">
+        <div>
+          <h1 className="text-xl">Basic Info</h1>
+          <Input
+            aria-label="lable1"
+            name="name"
+            type="name"
+            color="primary"
+            required={true}
+            placeholder="Enter your name"
+            radius="sm"
+            className="w-80 py-5 bg-transparent text-white"
+            onChange={(e) => setData({ ...data, name: e.target.value })}
+
+          />
+          <Input
+            aria-label="lable1"
+            name="email"
+            type="email"
+            color="primary"
+            required={true}
+            placeholder="Enter your email"
+            radius="sm"
+            className="w-80 py-5 text-white"
+            onChange={(e) => setData({ ...data, mail: e.target.value })}
+          />
+          <Input
+            aria-label="lable1"
+            name="phone"
+            type="text"
+            color="primary"
+            required={true}
+            placeholder="Enter your phone number"
+            radius="sm"
+            className="w-80 py-5 text-white"
+            onChange={(e) => setData({ ...data, phone: e.target.value })}
+          />
+          <Select
+            aria-label="lable1"
+            color="primary"
+            items={contactMethod}
+            name="contactmethod"
+            placeholder="Method of contact"
+            radius="sm"
+            className="w-80 py-5 text-white"
+            onChange={(e) => setData({ ...data, contactm: e.target.value })}
+          >
+            {(contactMethod) => <SelectItem key={contactMethod.key}>{contactMethod.lable}</SelectItem>}
+          </Select>
+        </div>
+        <div className="md:pl-5">
+          <h1 className="text-xl">Site Setup</h1>
+          <Select
+            aria-label="lable1"
+            items={ServicesOffered}
+            name="sitetype"
+            color="primary"
+            placeholder="Select a type of website"
+            radius="sm"
+            className="w-80 py-5 text-white"
+            onChange={(e) => setData({ ...data, web: e.target.value })}
+          >
+            {(ServicesOffered) => <SelectItem key={ServicesOffered.key}>{ServicesOffered.lable}</SelectItem>}
+          </Select>
+          <Input
+            aria-label="lable1"
+            name="use"
+            type="text"
+            color="primary"
+            placeholder="Use of website"
+            className="py-5 text-white"
+            radius="sm"
+            onChange={(e) => setData({ ...data, use: e.target.value })}
+          />
+          <Input
+            aria-label="lable1"
+            name="color"
+            type="text"
+            color="primary"
+            placeholder="Base Color scheme"
+            className="py-5 text-white"
+            radius="sm"
+            onChange={(e) => setData({ ...data, color: e.target.value })}
+          />
+          <Textarea
+            aria-label="lable1"
+            color="primary"
+            placeholder="Additional information"
+            radius="sm"
+            className="py-5 text-white"
+            onChange={(e) => setData({ ...data, addinfo: e.target.value })}
+          />
+        </div>
+      </div>
+      <button onClick={handleSubmit} className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
+        Get Started
+      </button>
     </div>
   );
 };
