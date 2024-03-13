@@ -26,6 +26,7 @@ const GetStarted = () => {
 
   const handleSubmit = () => {
     console.log("A new webiste entry!");
+    console.log(data);
   }
 
   const words = [
@@ -53,6 +54,7 @@ const GetStarted = () => {
             <div>
               <h1 className="text-xl">Basic Info</h1>
               <Input
+                aria-label="lable1"
                 name="name"
                 type="name"
                 color="primary"
@@ -64,6 +66,7 @@ const GetStarted = () => {
                 
               />
               <Input
+                aria-label="lable1"
                 name="email"
                 type="email"
                 color="primary"
@@ -74,6 +77,7 @@ const GetStarted = () => {
                 onChange={(e) => setData({ ...data, mail: e.target.value })}
               />
               <Input
+                aria-label="lable1"
                 name="phone"
                 type="text"
                 color="primary"
@@ -84,6 +88,7 @@ const GetStarted = () => {
                 onChange={(e) => setData({ ...data, phone: e.target.value })}
               />
               <Select
+                aria-label="lable1"
                 color="primary"
                 items={contactMethod}
                 name="contactmethod"
@@ -98,6 +103,7 @@ const GetStarted = () => {
             <div className="md:pl-5">
               <h1 className="text-xl">Site Setup</h1>
               <Select
+                aria-label="lable1"
                 items={ServicesOffered}
                 name="sitetype"
                 color="primary"
@@ -109,6 +115,7 @@ const GetStarted = () => {
                 {(ServicesOffered) => <SelectItem key={ServicesOffered.key}>{ServicesOffered.lable}</SelectItem>}
               </Select>
               <Input
+                aria-label="lable1"
                 name="use"
                 type="text"
                 color="primary"
@@ -118,6 +125,7 @@ const GetStarted = () => {
                 onChange={(e) => setData({ ...data, use: e.target.value })}
               />
               <Input
+                aria-label="lable1"
                 name="color"
                 type="text"
                 color="primary"
@@ -127,6 +135,7 @@ const GetStarted = () => {
                 onChange={(e) => setData({ ...data, color: e.target.value })}
               />
               <Textarea
+                aria-label="lable1"
                 color="primary"
                 placeholder="Additional information"
                 radius="sm"
