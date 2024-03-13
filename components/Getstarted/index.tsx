@@ -6,6 +6,11 @@ import { TypewriterEffectSmooth } from "../ui/typewriter-effects";
 import { Input, input } from "@nextui-org/react";
 
 const GetStarted = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("A new webiste entry!");
+  }
+
   const words = [
     {
       text: "Get",
@@ -24,12 +29,31 @@ const GetStarted = () => {
 
   return (
     <div className="flex flex-col max-w-5xl">
-      <TypewriterEffectSmooth words={words} className="text-left"/>
       <div>
-
+        <TypewriterEffectSmooth words={words} className="text-left"/>
       </div>
-      {/* INFO: turn on when in production */}
-      <BackgroundBeams />
+      <form action={handleSubmit}>
+      <Input
+          name="name"
+          type="name"
+          required={true}
+          placeholder="Enter your name"
+          radius="sm"
+          className="w-80 py-5"
+        />
+        <Input
+          name="email"
+          type="email"
+          required={true}
+          placeholder="Enter your email"
+          radius="sm"
+          className="w-80 py-5"
+        />
+        <button type="submit" className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
+          Get Started
+        </button>
+      </form>
+
     </div>
   );
 };
