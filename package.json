@@ -17,6 +17,7 @@
     "@tsparticles/slim": "^3.3.0",
     "clsx": "^2.1.0",
     "framer-motion": "latest",
+    "mongodb": "^6.5.0",
     "next": "14.0.3",
     "nextjs": "latest",
     "react": "^18",
