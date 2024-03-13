@@ -7,7 +7,7 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
     try {
-      connect();
+      await connect();
       const res = await request.json()
 
       const newClient = new client({
@@ -20,9 +20,8 @@ export async function POST(request: Request) {
         color: res.color,
         info: res.addinfo,
       })
-      newClient.save()
-        .then((result: any) => {Response.json(result)})
-        .catch((err:any) => {console.log(err); Response.json({err}, {status: 500})})
+      // TODO: Responce is not working
+      await newClient.save().then((r:any)=>{Response.json({ r }, { status: 200 })}).catch((e:any)=>{Response.json({ e }, { status: 500 })})
 
     //   return Response.json({ res }, { status: 200 })
     } catch (err) {

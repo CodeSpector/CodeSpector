@@ -25,6 +25,15 @@ const GetStarted = () => {
   });
 
   const handleSubmit = () => {
+    fetch("/api/getstarted",
+    {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify(data)
+    })
     console.log("A new webiste entry!");
     console.log(data);
   }
