@@ -16,11 +16,11 @@ const clientSchema = new Schema({
         required: true,
     },
     contactm: {
-        type: Int32,
+        type: String,
         required: true
     },
     web: {
-        type: Int32,
+        type: String,
         required: true
     },
     use: {
