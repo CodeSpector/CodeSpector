@@ -11,8 +11,10 @@ import { ServicesOffered } from "@/utils/SiteConfig";
 import { useState } from "react";
 import { UserData } from "@/utils/dataformats";
 import { Meteors } from "../ui/meteors";
+import { useRouter } from "next/navigation";
 
 const GetStarted = () => {
+  const router = useRouter();
   const [data, setData] = useState<UserData>({
     name: "string",
     mail: "string",
@@ -24,8 +26,8 @@ const GetStarted = () => {
     addinfo: "string",
   });
 
-  const handleSubmit = () => {
-    fetch("/api/getstarted",
+  async function handleSubmit() {
+    await fetch("/api/getstarted",
     {
         headers: {
           'Accept': 'application/json',
@@ -33,9 +35,8 @@ const GetStarted = () => {
         },
         method: "POST",
         body: JSON.stringify(data)
-    })
-    console.log("A new webiste entry!");
-    console.log(data);
+    });
+    router.push("/done");
   }
 
   const words = [

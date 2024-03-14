@@ -19,9 +19,11 @@ export async function POST(request: Request) {
         use: res.use,
         color: res.color,
         info: res.addinfo,
+        pending: true
       })
       // TODO: Responce is not working
-      await newClient.save().then((r:any)=>{Response.json({ r }, { status: 200 })}).catch((e:any)=>{Response.json({ e }, { status: 500 })})
+      await newClient.save()
+      return Response.json({msg: "done"});
 
     //   return Response.json({ res }, { status: 200 })
     } catch (err) {

@@ -33,6 +33,10 @@ const clientSchema = new Schema({
     },
     info: {
         type: String,
+    },
+    pending: {
+      type: Boolean,
+      required: true,
     }
 });
 
