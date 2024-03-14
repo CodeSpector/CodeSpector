@@ -9,7 +9,7 @@ const HoverCircle = () => {
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX - 25, y: e.clientY - 100 });
+      setPosition({ x: e.clientX - 20, y: e.clientY - 75 });
     };
     window.addEventListener("mousemove", mouseMove);
     return () => {
@@ -21,7 +21,7 @@ const HoverCircle = () => {
     <motion.div
       style={{ x: position.x, y: position.y }}
       animate={{ x: position.x, y: position.y }}
-      className="fixed h-1 w-1 p-5 border-1 rounded-full touch-pinch-zoom backdrop-invert pointer-events-none z-10"
+      className="hidden md:block fixed h-1 w-1 p-5 border-1 rounded-full touch-pinch-zoom pointer-events-none z-10"
     ></motion.div>
   );
 };
