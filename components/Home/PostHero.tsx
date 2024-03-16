@@ -9,7 +9,7 @@ const PostHero = () => {
       {/* The Sparkle section */}
       <div>
         <LampContainer>
-          <h1 className="text-4xl text-center">Give your place in the web</h1>
+          <h1 className="text-xl md:text-4xl text-center">Give your place in the web</h1>
           <div className="w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <h1 className="md:text-4xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
               Boost
@@ -23,14 +23,14 @@ const PostHero = () => {
 
               <br />
               <br />
-              <div className="text-center">
-                <span className="text-3xl text-center">
+              <div className="text-center text-wrap">
+                <span className="text-xl md:text-3xl text-center">
                   Get rid of those{" "}
-                  <span className="font-bold text-gray-600">old, dull</span>{" "}
-                  corporate looking websites and get your{" "}
+                  <span className="font-bold text-gray-600">old, dull</span>{" "} <br />
+                  corporate looking websites and get your{" "} <br />
                   <span className="font-bold bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
                     eye-catchy and mesmerizing
-                  </span>{" "}
+                  </span>{" "} <br />
                   websites your customers will{" "}
                   <span className="font-bold bg-gradient-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
                     love
