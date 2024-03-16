@@ -1,12 +1,10 @@
 "use client";
 
-import { BackgroundBeams } from "@components/ui/background-beams";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effects";
 
-import { Input, Textarea } from "@nextui-org/react";
-import { Select, SelectSection, SelectItem } from "@nextui-org/react";
+import { CircularProgress, Input, Textarea } from "@nextui-org/react";
+import { Select, SelectItem } from "@nextui-org/react";
 
-import { motion } from "framer-motion";
 import { ServicesOffered } from "@/utils/SiteConfig";
 import { useState } from "react";
 import { UserData } from "@/utils/dataformats";
@@ -15,6 +13,8 @@ import { useRouter } from "next/navigation";
 
 const GetStarted = () => {
   const router = useRouter();
+  const [isRunning, setRunning] = useState(false);
+  const [failiure, setFailure] = useState(false);
   const [data, setData] = useState<UserData>({
     name: "string",
     mail: "string",
@@ -27,16 +27,27 @@ const GetStarted = () => {
   });
 
   async function handleSubmit() {
-    await fetch("/api/getstarted",
-    {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify(data)
-    });
-    router.push("/done");
+    try {
+      setRunning(true);
+      const res = await fetch("/api/getstarted",
+        {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          method: "POST",
+          body: JSON.stringify(data)
+        });
+      if (!res.ok) {
+        setFailure(true);
+        setRunning(false);
+      } else {
+        router.push("/done");
+      }
+    } catch (error) {
+      setFailure(true);
+      console.log(error);
+    }
   }
 
   const words = [
@@ -153,9 +164,13 @@ const GetStarted = () => {
           />
         </div>
       </div>
-      <button onClick={handleSubmit} className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
-        Get Started
-      </button>
+      <div className="flex flex-col md:flex-row">
+        <button onClick={handleSubmit} className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
+          Get Started
+        </button>
+        <CircularProgress aria-label="Loading..." isDisabled={!isRunning} disableAnimation={!isRunning} />
+      </div>
+      <h1 className="mt-14 font-bold text-2xl" hidden={!failiure}>An Error Occured, please try again later</h1>
     </div>
   );
 };
