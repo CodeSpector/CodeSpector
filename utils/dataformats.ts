@@ -7,5 +7,6 @@ export type UserData = {
     use: string,
     color: string,
     addinfo: string,
+    domain: string,
 }
 

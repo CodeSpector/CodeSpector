@@ -16,14 +16,15 @@ const GetStarted = () => {
   const [isRunning, setRunning] = useState(false);
   const [failiure, setFailure] = useState(false);
   const [data, setData] = useState<UserData>({
-    name: "string",
-    mail: "string",
-    phone: "string",
-    contactm: "string | number",
-    web: "string | number",
-    use: "string",
-    color: "string",
-    addinfo: "string",
+    name: "",
+    mail: "",
+    phone: "",
+    contactm: "",
+    web: "",
+    use: "",
+    color: "",
+    addinfo: "",
+    domain: "",
   });
 
   async function handleSubmit() {
@@ -154,6 +155,14 @@ const GetStarted = () => {
             radius="sm"
             onChange={(e) => setData({ ...data, color: e.target.value })}
           />
+          <Input
+            aria-label="lable1"
+            color="primary"
+            placeholder="Prefered Domain"
+            radius="sm"
+            className="py-5 text-white"
+            onChange={(e) => setData({ ...data, domain: e.target.value })}
+          />
           <Textarea
             aria-label="lable1"
             color="primary"
@@ -168,7 +177,7 @@ const GetStarted = () => {
         <button onClick={handleSubmit} className="bg-light-purple rounded-md text-white py-2 px-4 mt-4">
           Get Started
         </button>
-        <CircularProgress aria-label="Loading..." isDisabled={!isRunning} disableAnimation={!isRunning} />
+        {/* <CircularProgress aria-label="Loading..." disableAnimation={!isRunning} /> */}
       </div>
       <h1 className="mt-14 font-bold text-2xl" hidden={!failiure}>An Error Occured, please try again later</h1>
     </div>

@@ -34,6 +34,10 @@ const clientSchema = new Schema({
     info: {
         type: String,
     },
+    domain: {
+        type: String,
+        required: true,
+    },
     pending: {
       type: Boolean,
       required: true,
